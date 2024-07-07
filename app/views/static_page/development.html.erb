@@ -1,0 +1,119 @@
+<% content_for :title, "システム開発" %>
+
+<% content_for :menu_setting do %>
+  <% @menu = :development %>
+<% end %>
+
+<% breadcrumbs = [
+     [ "トップページ", root_path ],
+     [ "システム開発", nil ],
+   ] %>
+<%= render "layouts/breadcrumbs", breadcrumbs: breadcrumbs %>
+
+<!-- ======= Services Section ======= -->
+<section id="services" class="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>本研究所で作成するシステムの特徴</h2>
+      <p>大規模開発にも耐えうる堅牢なシステム</p>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="icon-box">
+          <i class="bi bi-card-list"></i>
+          <h4><a href="#">機能一覧</a></h4>
+          <p>
+            全体量を把握できる（工数見積もり、テストなどで利用できる）全機能を網羅した機能一覧がまとまっている
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0">
+        <div class="icon-box">
+          <i class="bi bi-bezier"></i>
+          <h4><a href="#">モデリング</a></h4>
+          <p>
+            要件分析、開発する際に必要な図が整備されている
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0">
+        <div class="icon-box">
+          <i class="bi bi-house"></i>
+          <h4><a href="#">開発環境</a></h4>
+          <p>
+            手軽に開発環境を構築できる<br>
+            そのための情報がまとまっている
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0">
+        <div class="icon-box">
+          <i class="bi bi-house-door"></i>
+          <h4><a href="#">本番環境（ステージング環境）</a></h4>
+          <p>
+            本番環境に限りなく近い環境が用意されている<br>
+            定期的にそのような環境を構築している
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0">
+        <div class="icon-box">
+          <i class="bi bi-bar-chart"></i>
+          <h4><a href="#">テスト</a></h4>
+          <p>
+            実施するテストのレベルとそのレベルごとの方針が定まっている
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0">
+        <div class="icon-box">
+          <i class="bi bi-binoculars"></i>
+          <h4><a href="#">CI</a></h4>
+          <p>
+            CI 環境が整備されている
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0">
+        <div class="icon-box">
+          <i class="bi bi-brightness-high"></i>
+          <h4><a href="#">ロギング</a></h4>
+          <p>
+            ログレベルとその方針が定まっている
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0">
+        <div class="icon-box">
+          <i class="bi bi-gear"></i>
+          <h4><a href="#">設定</a></h4>
+          <p>
+            設定できる項目と設定箇所が一覧としてまとまっている
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0">
+        <div class="icon-box">
+          <i class="bi bi-exclamation-triangle"></i>
+          <h4><a href="#">例外処理</a></h4>
+          <p>
+            想定外のエラー（ヌルポインター例外など）が発生したときにすぐに検知できるようになっている<br>
+            また、そのようなエラーが発生したときの動作を完全に把握している
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 mt-4 mt-md-0">
+        <div class="icon-box">
+          <i class="bi bi-book"></i>
+          <h4><a href="#">コーディング規約</a></h4>
+          <p>
+            コーデイング規約が定まっている<br>
+            コーデイング規約をチェックするしくみが整備されている
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section><!-- End Services Section -->

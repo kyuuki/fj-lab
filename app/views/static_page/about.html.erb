@@ -1,12 +1,12 @@
-<% content_for :title, "About" %>
+<% content_for :title, "組織情報" %>
 
 <% content_for :menu_setting do %>
   <% @menu = :about %>
 <% end %>
 
 <% breadcrumbs = [
-     [ "Home", root_path ],
-     [ "About", nil ],
+     [ "トップページ", root_path ],
+     [ "組織情報", nil ],
    ] %>
 <%= render "layouts/breadcrumbs", breadcrumbs: breadcrumbs %>
 
@@ -15,25 +15,27 @@
   <div class="container">
 
     <div class="row content">
-      <div class="col-lg-6">
-        <h2>Eum ipsam laborum deleniti velitena</h2>
-        <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assum perenda sruen jonee trave</h3>
-      </div>
-      <div class="col-lg-6 pt-4 pt-lg-0">
-        <p>
-          Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum
-        </p>
-        <ul>
-          <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequa</li>
-          <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-          <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</li>
-        </ul>
-        <p class="fst-italic">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.
-        </p>
+      <div class="col-lg-12">
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <th>組織名</th>
+              <td>フジプログラミング研究所</td>
+            </tr>
+            <tr>
+              <th>設立</th>
+              <td>2016 年 1 月 28 日</td>
+            </tr>
+            <tr>
+              <th>資本金</th>
+              <td>30 万円</td>
+            </tr>
+            <tr>
+              <th>事業内容</th>
+              <td>システム開発</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 
@@ -41,6 +43,7 @@
 </section><!-- End About Section -->
 
 <!-- ======= Team Section ======= -->
+<!--
 <section id="team" class="team section-bg">
   <div class="container">
 
@@ -122,9 +125,10 @@
     </div>
 
   </div>
-</section><!-- End Team Section -->
+</section>--><!-- End Team Section -->
 
 <!-- ======= Our Skills Section ======= -->
+<!--
 <section id="skills" class="skills">
   <div class="container">
 
@@ -188,5 +192,5 @@
     </div>
 
   </div>
-</section><!-- End Our Skills Section -->
+</section>--><!-- End Our Skills Section -->
   

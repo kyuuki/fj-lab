@@ -2,14 +2,18 @@
 <header id="header" class="fixed-top d-flex align-items-center">
   <div class="container d-flex align-items-center">
 
-    <h1 class="logo me-auto"><a href="/">Sailor</a></h1>
+    <h1 class="logo me-auto"><a href="/"><%= Rails.configuration.setting[:app_name] %></a></h1>
     <!-- Uncomment below if you prefer to use an image logo -->
     <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
     <nav id="navbar" class="navbar">
       <ul>
-        <li><%= link_to "Home", root_path, class: @menu == :home ? "active" : nil %></li>
+        <li><%= link_to "トップページ", root_path, class: @menu == :home ? "active" : nil %></li>
+        <li><%= link_to "組織理念", policy_path, class: @menu == :policy ? "active" : nil %></li>
+        <li><%= link_to "システム開発", development_path, class: @menu == :development ? "active" : nil %></li>
+        <li><%= link_to "組織情報", about_path, class: @menu == :about ? "active" : nil %></li>
 
+        <!--
         <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><%= link_to "About", about_path, class: @menu == :about ? "active" : nil %></li>
@@ -33,7 +37,8 @@
         <li><%= link_to "Blog", blog_path, class: @menu == :blog ? "active" : nil %></li>
 
         <li><%= link_to "Contact", contact_path, class: @menu == :contact ? "active" : nil %></li>
-        <li><a href="/" class="getstarted">Get Started</a></li>
+        -->
+        <li><a href="https://goo.gl/forms/fzBcOSjL6ZQLKBpR2" class="getstarted" target="_blank">お問い合わせ</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
